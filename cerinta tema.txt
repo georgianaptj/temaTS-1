@@ -1,0 +1,22 @@
+
+La linkul urmator o sa gasiti un fisier tip .csv cu 5 milioane de inregistrari (~70mb) – https://we.tl/t-HeXUTBVPoM
+ 
+Cerintele temei sunt urmatoarele:
+•	Se citesc datele din fisier care au urmatorul format:
+o	Pe prima coloana este un numar.
+o	Pe a 2a coloana este baza in care este numarul.
+o	Pe a 3a coloana este baza in care trebuie convertit numarul.
+o	Ex: 21022013 4 6
+•	Se va genera un nou fisier cu numerele convertite.
+•	Cu cat programul vostru se executa mai repede, cu atat mai bine – ideal puteti folosi timestamps (endDate - startDate) ca sa logati la consola cat timp a durat executia
+
+Ca si sidenote: parseInt suporta pana la baza 36. S-ar putea ca in fisierul ala sa fie baze sim ai mari de atat si atunci sa iti crape parseInt 😊 De asta zic ca cel mai bine e sa o implementati voi.
+
+O sa va rog ca in repo-urile cu tema sa puneti un .gitignore in care sa ignorati node_modules, package-lock.json si lib (puteti copia unul din curs). 
+Pe langa astea sa ignorati si fisierele de intrare si de iesire .csv fiindca alea nu trebuie versionate.
+Le copiem noi si o sa se genereze
+	1.Tema sa fie impartita in 3 parti si anume read - process - write pentru a fi mai usor de masurat si a nu ne folosi de algoritmii care deja sunt implementati in read, spre exemplu
+	2.Crestem timpul de la 2s la 5s - se poate face si mai repede de atat dar nu cred ca veti reusi. Atata timp cat va apropiati de 5s should be all good. Spre exemplu, eu am reusit sa scot 4.8s
+
+
+
